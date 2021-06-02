@@ -1,0 +1,45 @@
+﻿@page
+@model Lga.Id.Web.Pages.Upload.IndexModel
+
+<h2>Upload Score data</h2>
+<hr />
+
+<div class="row">
+    <div class="container-fluid">
+        <div class="container">
+            <form method="post" enctype="multipart/form-data">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title"> Bulk Upload</h5>
+                        <p class="card-text">Bulk upload the data from CSVs</p>
+                        <p>
+                            <div class="btn btn-outline-primary waves-effect">
+                                <span>Choose file<i class="fas fa-cloud-upload-alt ml-3" aria-hidden="true"></i></span>
+                                <input type="file" style="width: 500px" asp-for="Upload">
+                            </div>
+                        </p>
+                        @*<a href="#" class="btn btn-primary">Upload to server</a>*@
+                        <input type="submit" class="btn btn-primary" value="Upload" />
+                    </div>
+                </div>
+                <br />
+                @if (Model.ShowValidationSection)
+                {
+                    <div class="form-row" id="divValidation">
+                        <div class="table-responsive">
+                            <partial name="_PartialValidationShort" model="Model.ValidationMessages" />
+                         </div>
+                    </div>
+                }
+            </form>
+        </div>
+    </div>
+</div><div id="loader" style="display: none">
+    <div class="center">
+        <img alt="" src="@Url.Content("~/images/loader-sm.gif")" />
+    </div>
+</div>
+@section Scripts
+{
+    <script src="@Url.Content("~/js/score.js")"></script>
+}

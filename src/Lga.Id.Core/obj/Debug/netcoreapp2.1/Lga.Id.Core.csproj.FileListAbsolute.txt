@@ -1,0 +1,9 @@
+D:\Job-Assignments\id\Xero.RefactorThis\src\Xero.RefactorThis.Core\bin\Debug\netcoreapp2.1\Lga.Id.Core.deps.json
+D:\Job-Assignments\id\Xero.RefactorThis\src\Xero.RefactorThis.Core\bin\Debug\netcoreapp2.1\Lga.Id.Core.dll
+D:\Job-Assignments\id\Xero.RefactorThis\src\Xero.RefactorThis.Core\bin\Debug\netcoreapp2.1\Lga.Id.Core.pdb
+D:\Job-Assignments\id\Xero.RefactorThis\src\Xero.RefactorThis.Core\obj\Debug\netcoreapp2.1\Lga.Id.Core.csprojAssemblyReference.cache
+D:\Job-Assignments\id\Xero.RefactorThis\src\Xero.RefactorThis.Core\obj\Debug\netcoreapp2.1\Lga.Id.Core.AssemblyInfoInputs.cache
+D:\Job-Assignments\id\Xero.RefactorThis\src\Xero.RefactorThis.Core\obj\Debug\netcoreapp2.1\Lga.Id.Core.AssemblyInfo.cs
+D:\Job-Assignments\id\Xero.RefactorThis\src\Xero.RefactorThis.Core\obj\Debug\netcoreapp2.1\Lga.Id.Core.csproj.CoreCompileInputs.cache
+D:\Job-Assignments\id\Xero.RefactorThis\src\Xero.RefactorThis.Core\obj\Debug\netcoreapp2.1\Lga.Id.Core.dll
+D:\Job-Assignments\id\Xero.RefactorThis\src\Xero.RefactorThis.Core\obj\Debug\netcoreapp2.1\Lga.Id.Core.pdb

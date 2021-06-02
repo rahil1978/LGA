@@ -1,0 +1,275 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+/*@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}*/
+
+/*.all-staff-section {
+    background-color: #a5b6d3;
+}
+
+.afa-section {
+    background-color: burlywood;
+}
+
+.dealer-section {
+    background-color: #d8f4d0;
+}*/
+
+.Sub-headings {
+    font-weight: bold;
+}
+
+.TextAreaStyle {
+    height:100px;
+}
+
+.card-body-text{
+    font-size:.8rem !important;
+}
+
+.section-highlight {
+    background-color: #bdd5fc;
+    font-style: italic;
+}
+
+.large-textarea{
+    height:200px !important;
+    width:100%
+}
+
+.error-alert {
+    border-color: red;
+    border-style: solid;
+    border-radius: .25rem;
+    border-width: 1px;
+}
+
+.conflict-error-alert {
+    color: red;
+    display: block;
+}
+
+/*added for autocomplete*/
+/*.ui-menu .ui-menu-item a {
+    color: #96f226;
+    border-radius: 0px;
+    border: 2px solid red;
+}
+
+.ui-autocomplete-input {
+    border: 1px solid lightgray !important;
+    background: #fff !important;
+}
+
+.custom-combobox-toggle {
+    border: 1px solid lightgray !important;
+    background: #fff !important;
+}*/
+
+.ui-autocomplete-loading {
+    background: url('http://rhea31/CustodyCertificateRegister/images/dot_small.gif') no-repeat right center
+}
+
+{
+    background: url('http://rhea31/CustodyCertificateRegister/images/dot_small.gif') no-repeat right center;
+}
+
+.feather-16 {
+    width: 16px;
+    height: 16px;
+}
+
+.feather-24 {
+    width: 24px;
+    height: 24px;
+}
+
+.feather-32 {
+    width: 32px;
+    height: 32px;
+}
+
+/*.container {
+    max-width: 1900px;
+}*/
+@media (min-width: 100px) {
+    .container {
+        max-width: 1900px;
+    }
+}
+
+.btnRemove {
+    background-color: DodgerBlue; /* Blue background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 12px 16px; /* Some padding */
+    font-size: 16px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+}
+
+
+.visible {
+    /*visibility: visible;*/
+    display: block;
+}
+
+.invisible {
+    /*visibility: hidden;*/
+    display: none;
+}
+
+.unstyled-button {
+    border: none;
+    padding: 0;
+    background: none;
+    color: #007bff;
+}
+
+.table-condensed {
+    font-size: 10px;
+}
+
+.table-condensed-1 {
+    font-size: 14px;
+    display: none;
+}
+
+.table-background-withBorder {
+    background-color: #5499C7 !important;
+    border: 1px solid #dee2e6 !important;
+    border-color: #ffc107 !important;
+}
+.table-background {
+    background-color: #5499C7 !important;
+}
+
+
+
+
+.TestingClass{
+    border:2px solid red;
+    color: red; 
+}
+
+.ui-autocomplete {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    float: left;
+    display: none;
+    min-width: 160px;
+    padding: 4px 0;
+    margin: 0 0 10px 25px;
+    list-style: none;
+    background-color: #ffffff;
+    border-color: #ccc;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-style: solid;
+    border-width: 1px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    *border-right-width: 2px;
+    *border-bottom-width: 2px;
+}
+
+.ui-menu-item > a.ui-corner-all {
+    display: block;
+    padding: 3px 15px;
+    clear: both;
+    font-weight: normal;
+    line-height: 18px;
+    color: red;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.ui-state-hover, .ui-state-active {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: blue;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    background-image: none;
+}
+
+.buttonload {
+    background-color: #0069d9; /* Green background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 12px 24px; /* Some padding */
+    font-size: 16px; /* Set a font-size */
+}
+
+/* Add a right margin to each icon */
+.fa {
+    margin-left: -12px;
+    margin-right: 8px;
+}
+
+.dataTables_length{
+    padding-left: 5px; 
+}
+
+.dataTables_filter{
+    padding-right: 12px; 
+}
+
+dataTables_paginate {
+    padding-right: 95px;
+}
+
+/*.footer {
+    position:relative;
+    /*bottom: 0;*/
+    width: 100%;
+    white-space: nowrap;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    line-height: 60px; /* Vertically center the text there */
+}
+
+
+#copyright {
+    position: absolute;
+    bottom: 0;
+}*/

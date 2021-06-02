@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Lga.Id.Web</name>
+    </assembly>
+    <members>
+        <member name="M:Lga.Id.Web.Controllers.ScoresController.ListAsync">
+            <summary>
+            Gets all scores.
+            </summary>
+            <returns>List os scores.</returns>
+        </member>
+        <member name="M:Lga.Id.Web.Controllers.ScoresController.GetAsync(System.Int32)">
+            <summary>
+            Gets the score that matches the specified ID.
+            </summary>
+            <param name="id">scores identifier.</param>        
+            <returns>Response for the request.</returns>
+        </member>
+        <member name="M:Lga.Id.Web.Controllers.ScoresController.PostAsync(Lga.Id.Web.ResourceModels.SaveScoreResourceModel)">
+            <summary>
+            Creates a new score record.
+            </summary>
+            <param name="newScore">New score data.</param>
+            <returns>Response for the request.</returns>
+        </member>
+        <member name="M:Lga.Id.Web.Controllers.ScoresController.PutAsync(System.Int32,Lga.Id.Web.ResourceModels.SaveScoreResourceModel)">
+            <summary>
+            Updates a score.
+            </summary>
+            <param name="id">score id.</param>
+            <param name="updatedScore">Updated score data.</param>
+            <returns>Response for the request.</returns>
+        </member>
+        <member name="M:Lga.Id.Web.Controllers.ScoresController.DeleteAsync(System.Int32)">
+            <summary>
+            Deletes a score and its options.
+            </summary>
+            <param name="id">Score identifier.</param>
+            <returns>Response for the request.</returns>
+        </member>
+        <member name="M:Lga.Id.Web.Controllers.ScoresController.GetScoreDetail(System.Int32)">
+            <summary>
+            Finds all options for a specified score.
+            </summary>
+            <param name="scoreId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Lga.Id.Web.Controllers.ScoresController.GetOptionAsync(System.Int32,System.Int32)">
+            <summary>
+            Finds the specified score option for the specified score.
+            </summary>
+            <param name="scoreId"></param>
+            <param name="scoreDetailId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Lga.Id.Web.Controllers.ScoresController.PostScoreDetailsAsync(System.Int32,Lga.Id.Web.ResourceModels.SaveScoreDetailResourceModel)">
+            <summary>
+            Adds a new score detail to the specified score.
+            </summary>
+            <param name="scoreId"></param>
+            <param name="newScoreDetail"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Lga.Id.Web.Controllers.ScoresController.PutOptionAsync(System.Int32,System.Int32,Lga.Id.Web.ResourceModels.SaveScoreDetailResourceModel)">
+            <summary>
+            Updates the specified score details.
+            </summary>
+            <param name="scoreId"></param>
+            <param name="scoreDetailId"></param>
+            <param name="updatedScoreDetail"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Lga.Id.Web.Controllers.ScoresController.DeleteOptionAsync(System.Int32,System.Int32)">
+            <summary>
+            Deletes the specified Score Detail\.
+            </summary>
+            <param name="scoreId"></param>
+            <param name="scoreDetailId"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

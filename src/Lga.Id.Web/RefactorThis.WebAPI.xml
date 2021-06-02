@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Lga.Id.Web</name>
+    </assembly>
+    <members>
+        <member name="M:Lga.Id.Web.Controllers.ProductsController.ListAsync">
+            <summary>
+            Lists all products.
+            </summary>
+            <returns>List os products.</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Lga.Id.Web.Controllers.ProductsController.SearchAsync(Lga.Id.Web.ResourceModels.ProductQueryResourceModel)" -->
+        <member name="M:Lga.Id.Web.Controllers.ProductsController.GetAsync(System.Guid)">
+            <summary>
+            Get an existing product by Id
+            </summary>
+            <param name="id">products identifier.</param>        
+            <returns>Response for the request.</returns>
+        </member>
+        <member name="M:Lga.Id.Web.Controllers.ProductsController.PostAsync(Lga.Id.Web.ResourceModels.SaveProductResourceModel)">
+            <summary>
+            Saves a new product.
+            </summary>
+            <param name="newProduct">New product data.</param>
+            <returns>Response for the request.</returns>
+        </member>
+        <member name="M:Lga.Id.Web.Controllers.ProductsController.PutAsync(System.Guid,Lga.Id.Web.ResourceModels.SaveProductResourceModel)">
+            <summary>
+            Updates a product
+            </summary>
+            <param name="id">product id.</param>
+            <param name="updatedProduct">Updated product data.</param>
+            <returns>Response for the request.</returns>
+        </member>
+        <member name="M:Lga.Id.Web.Controllers.ProductsController.DeleteAsync(System.Guid)">
+            <summary>
+            Updates a product
+            </summary>
+            <param name="id">Product identifier.</param>
+            <returns>Response for the request.</returns>
+        </member>
+        <member name="M:Lga.Id.Web.Controllers.ProductsController.GetOptions(System.Guid)">
+            <summary>
+            Finds all options for a specified product.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Lga.Id.Web.Controllers.ProductsController.GetOptionById(System.Guid,System.Guid)">
+            <summary>
+            finds the specified product option for the specified product.
+            </summary>
+            <param name="id"></param>
+            <param name="optionId"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

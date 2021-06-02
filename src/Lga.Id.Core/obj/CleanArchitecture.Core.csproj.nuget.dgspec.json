@@ -1,0 +1,114 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Lab\\CleanArchitecture-master\\src\\CleanArchitecture.Core\\CleanArchitecture.Core.csproj": {}
+  },
+  "projects": {
+    "C:\\Lab\\CleanArchitecture-master\\src\\CleanArchitecture.Core\\CleanArchitecture.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Lab\\CleanArchitecture-master\\src\\CleanArchitecture.Core\\CleanArchitecture.Core.csproj",
+        "projectName": "CleanArchitecture.Core",
+        "projectPath": "C:\\Lab\\CleanArchitecture-master\\src\\CleanArchitecture.Core\\CleanArchitecture.Core.csproj",
+        "packagesPath": "C:\\Users\\raslam\\.nuget\\packages\\",
+        "outputPath": "C:\\Lab\\CleanArchitecture-master\\src\\CleanArchitecture.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Lab\\CleanArchitecture-master\\NuGet.Config",
+          "C:\\Users\\raslam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://rhea31/ForsythBarrNugetServer/Nuget": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://forsythbarr.pkgs.visualstudio.com/_packaging/FBNuGet/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {
+              "C:\\Lab\\CleanArchitecture-master\\src\\CleanArchitecture.SharedKernel\\CleanArchitecture.SharedKernel.csproj": {
+                "projectPath": "C:\\Lab\\CleanArchitecture-master\\src\\CleanArchitecture.SharedKernel\\CleanArchitecture.SharedKernel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Lab\\CleanArchitecture-master\\src\\CleanArchitecture.SharedKernel\\CleanArchitecture.SharedKernel.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Lab\\CleanArchitecture-master\\src\\CleanArchitecture.SharedKernel\\CleanArchitecture.SharedKernel.csproj",
+        "projectName": "CleanArchitecture.SharedKernel",
+        "projectPath": "C:\\Lab\\CleanArchitecture-master\\src\\CleanArchitecture.SharedKernel\\CleanArchitecture.SharedKernel.csproj",
+        "packagesPath": "C:\\Users\\raslam\\.nuget\\packages\\",
+        "outputPath": "C:\\Lab\\CleanArchitecture-master\\src\\CleanArchitecture.SharedKernel\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Lab\\CleanArchitecture-master\\NuGet.Config",
+          "C:\\Users\\raslam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://rhea31/ForsythBarrNugetServer/Nuget": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://forsythbarr.pkgs.visualstudio.com/_packaging/FBNuGet/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

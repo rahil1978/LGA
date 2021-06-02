@@ -1,0 +1,99 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Job-Assignments\\id\\Xero.RefactorThis\\tests\\Xero.RefactorThis.UnitTests\\Xero.RefactorThis.UnitTests.csproj": {}
+  },
+  "projects": {
+    "D:\\Job-Assignments\\id\\Xero.RefactorThis\\tests\\Xero.RefactorThis.UnitTests\\Xero.RefactorThis.UnitTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Job-Assignments\\id\\Xero.RefactorThis\\tests\\Xero.RefactorThis.UnitTests\\Xero.RefactorThis.UnitTests.csproj",
+        "projectName": "Xero.RefactorThis.UnitTests",
+        "projectPath": "D:\\Job-Assignments\\id\\Xero.RefactorThis\\tests\\Xero.RefactorThis.UnitTests\\Xero.RefactorThis.UnitTests.csproj",
+        "packagesPath": "C:\\Users\\Raheel\\.nuget\\packages\\",
+        "outputPath": "D:\\Job-Assignments\\id\\Xero.RefactorThis\\tests\\Xero.RefactorThis.UnitTests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Raheel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "targetAlias": "netcoreapp2.1",
+            "projectReferences": {
+              "D:\\Job-Assignments\\id\\Xero.RefactorThis\\src\\Lga.Id.Core\\Lga.Id.Core.csproj": {
+                "projectPath": "D:\\Job-Assignments\\id\\Xero.RefactorThis\\src\\Lga.Id.Core\\Lga.Id.Core.csproj"
+              },
+              "D:\\Job-Assignments\\id\\Xero.RefactorThis\\src\\Lga.Id.Infrastructure\\Lga.Id.Infrastructure.csproj": {
+                "projectPath": "D:\\Job-Assignments\\id\\Xero.RefactorThis\\src\\Lga.Id.Infrastructure\\Lga.Id.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "targetAlias": "netcoreapp2.1",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.13.1, )"
+            },
+            "ReportGenerator": {
+              "target": "Package",
+              "version": "[4.4.6, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

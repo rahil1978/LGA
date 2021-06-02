@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Lga.Id.WebAPI</name>
+    </assembly>
+    <members>
+        <member name="M:Lga.Id.WebAPI.Controllers.ProductsController.ListAsync">
+            <summary>
+            Gets all products.
+            </summary>
+            <returns>List os products.</returns>
+        </member>
+        <member name="M:Lga.Id.WebAPI.Controllers.ProductsController.SearchAsync(System.String)">
+            <summary>
+             Finds all products matching the specified name.
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Lga.Id.WebAPI.Controllers.ProductsController.GetAsync(System.Guid)">
+            <summary>
+            Gets the product that matches the specified ID - ID is a GUID.
+            </summary>
+            <param name="id">products identifier.</param>        
+            <returns>Response for the request.</returns>
+        </member>
+        <member name="M:Lga.Id.WebAPI.Controllers.ProductsController.PostAsync(Lga.Id.WebAPI.ResourceModels.SaveProductResourceModel)">
+            <summary>
+            Creates a new product.
+            </summary>
+            <param name="newProduct">New product data.</param>
+            <returns>Response for the request.</returns>
+        </member>
+        <member name="M:Lga.Id.WebAPI.Controllers.ProductsController.PutAsync(System.Guid,Lga.Id.WebAPI.ResourceModels.SaveProductResourceModel)">
+            <summary>
+            Updates a product.
+            </summary>
+            <param name="id">product id.</param>
+            <param name="updatedProduct">Updated product data.</param>
+            <returns>Response for the request.</returns>
+        </member>
+        <member name="M:Lga.Id.WebAPI.Controllers.ProductsController.DeleteAsync(System.Guid)">
+            <summary>
+            Deletes a product and its options.
+            </summary>
+            <param name="id">Product identifier.</param>
+            <returns>Response for the request.</returns>
+        </member>
+        <member name="M:Lga.Id.WebAPI.Controllers.ProductsController.GetOptions(System.Guid)">
+            <summary>
+            Finds all options for a specified product.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Lga.Id.WebAPI.Controllers.ProductsController.GetOptionAsync(System.Guid,System.Guid)">
+            <summary>
+            Finds the specified product option for the specified product.
+            </summary>
+            <param name="id"></param>
+            <param name="optionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Lga.Id.WebAPI.Controllers.ProductsController.PostOptionAsync(System.Guid,Lga.Id.WebAPI.ResourceModels.SaveProductOptionResourceModel)">
+            <summary>
+            Adds a new product option to the specified product.
+            </summary>
+            <param name="id"></param>
+            <param name="newOption"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Lga.Id.WebAPI.Controllers.ProductsController.PutOptionAsync(System.Guid,System.Guid,Lga.Id.WebAPI.ResourceModels.SaveProductOptionResourceModel)">
+            <summary>
+            Updates the specified product option.
+            </summary>
+            <param name="id"></param>
+            <param name="optionId"></param>
+            <param name="updatedOption"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Lga.Id.WebAPI.Controllers.ProductsController.DeleteOptionAsync(System.Guid,System.Guid)">
+            <summary>
+            Deletes the specified product option.
+            </summary>
+            <param name="id"></param>
+            <param name="optionId"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

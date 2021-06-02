@@ -1,0 +1,346 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Lab\RefactorThis\src\Lga.Id.Web\Lga.Id.Web.xml</DocumentationFile>
+    <NoWarn>1701;1702;1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="appsettings.json~RF32ebde6f.TMP" />
+    <None Remove="appsettings.json~RF37147e9.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.ApiExplorer" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.6" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.4" />
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ViewComponents\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\images\logo.svg" />
+    <None Include="wwwroot\js\Certificate.js" />
+    <None Include="wwwroot\js\Decide.js" />
+    <None Include="wwwroot\js\Registry.js" />
+    <None Include="wwwroot\js\Relinquishment.js" />
+    <None Include="wwwroot\js\site.js" />
+    <None Include="wwwroot\js\site.min.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\css\bootstrap-select.css.map" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\bootstrap-select.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\bootstrap-select.js.map" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\bootstrap-select.min.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-ar_AR.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-ar_AR.min.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-bg_BG.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-bg_BG.min.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-cro_CRO.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-cro_CRO.min.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-cs_CZ.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-cs_CZ.min.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-da_DK.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-da_DK.min.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-de_DE.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-de_DE.min.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-en_US.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-en_US.min.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-es_CL.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-es_CL.min.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-es_ES.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-es_ES.min.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-et_EE.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-et_EE.min.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-eu.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-eu.min.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-fa_IR.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-fa_IR.min.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-fi_FI.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-fi_FI.min.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-fr_FR.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-fr_FR.min.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-hu_HU.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-hu_HU.min.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-id_ID.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-id_ID.min.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-it_IT.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-it_IT.min.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-ja_JP.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-ja_JP.min.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-kh_KM.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-kh_KM.min.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-ko_KR.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-ko_KR.min.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-lt_LT.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-lt_LT.min.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-nb_NO.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-nb_NO.min.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-nl_NL.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-nl_NL.min.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-pl_PL.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-pl_PL.min.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-pt_BR.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-pt_BR.min.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-pt_PT.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-pt_PT.min.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-ro_RO.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-ro_RO.min.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-ru_RU.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-ru_RU.min.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-sk_SK.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-sk_SK.min.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-sl_SI.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-sl_SI.min.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-sv_SE.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-sv_SE.min.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-tr_TR.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-tr_TR.min.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-ua_UA.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-ua_UA.min.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-vi_VN.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-vi_VN.min.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-zh_CN.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-zh_CN.min.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-zh_TW.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\i18n\defaults-zh_TW.min.js" />
+    <None Include="wwwroot\lib\bootstrap-select\dist\js\Popper.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.js.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\Popper.js" />
+    <None Include="wwwroot\lib\bootstrap\LICENSE" />
+    <None Include="wwwroot\lib\DataTables.zip" />
+    <None Include="wwwroot\lib\DataTables\DataTables-1.10.18\js\dataTables.bootstrap.js" />
+    <None Include="wwwroot\lib\DataTables\DataTables-1.10.18\js\dataTables.bootstrap.min.js" />
+    <None Include="wwwroot\lib\DataTables\DataTables-1.10.18\js\dataTables.bootstrap4.js" />
+    <None Include="wwwroot\lib\DataTables\DataTables-1.10.18\js\dataTables.bootstrap4.min.js" />
+    <None Include="wwwroot\lib\DataTables\DataTables-1.10.18\js\dataTables.foundation.js" />
+    <None Include="wwwroot\lib\DataTables\DataTables-1.10.18\js\dataTables.foundation.min.js" />
+    <None Include="wwwroot\lib\DataTables\DataTables-1.10.18\js\dataTables.jqueryui.js" />
+    <None Include="wwwroot\lib\DataTables\DataTables-1.10.18\js\dataTables.jqueryui.min.js" />
+    <None Include="wwwroot\lib\DataTables\DataTables-1.10.18\js\dataTables.semanticui.js" />
+    <None Include="wwwroot\lib\DataTables\DataTables-1.10.18\js\dataTables.semanticui.min.js" />
+    <None Include="wwwroot\lib\DataTables\DataTables-1.10.18\js\jquery.dataTables.js" />
+    <None Include="wwwroot\lib\DataTables\DataTables-1.10.18\js\jquery.dataTables.min.js" />
+    <None Include="wwwroot\lib\DataTables\datatables.js" />
+    <None Include="wwwroot\lib\DataTables\datatables.min.js" />
+    <None Include="wwwroot\lib\datetime-moment.js" />
+    <None Include="wwwroot\lib\feather\feather.min.js" />
+    <None Include="wwwroot\lib\font-awesome\font\fontawesome-webfont.svg" />
+    <None Include="wwwroot\lib\font-awesome\js\all.js" />
+    <None Include="wwwroot\lib\font-awesome\js\all.min.js" />
+    <None Include="wwwroot\lib\font-awesome\js\brands.js" />
+    <None Include="wwwroot\lib\font-awesome\js\brands.min.js" />
+    <None Include="wwwroot\lib\font-awesome\js\fontawesome.js" />
+    <None Include="wwwroot\lib\font-awesome\js\fontawesome.min.js" />
+    <None Include="wwwroot\lib\font-awesome\js\regular.js" />
+    <None Include="wwwroot\lib\font-awesome\js\regular.min.js" />
+    <None Include="wwwroot\lib\font-awesome\js\solid.js" />
+    <None Include="wwwroot\lib\font-awesome\js\solid.min.js" />
+    <None Include="wwwroot\lib\font-awesome\js\v4-shims.js" />
+    <None Include="wwwroot\lib\font-awesome\js\v4-shims.min.js" />
+    <None Include="wwwroot\lib\font-awesome\less\bootstrap.less" />
+    <None Include="wwwroot\lib\font-awesome\less\core.less" />
+    <None Include="wwwroot\lib\font-awesome\less\extras.less" />
+    <None Include="wwwroot\lib\font-awesome\less\font-awesome-ie7.less" />
+    <None Include="wwwroot\lib\font-awesome\less\font-awesome.less" />
+    <None Include="wwwroot\lib\font-awesome\less\icons.less" />
+    <None Include="wwwroot\lib\font-awesome\less\mixins.less" />
+    <None Include="wwwroot\lib\font-awesome\less\path.less" />
+    <None Include="wwwroot\lib\font-awesome\less\variables.less" />
+    <None Include="wwwroot\lib\font-awesome\scss\font-awesome-ie7.scss" />
+    <None Include="wwwroot\lib\font-awesome\scss\font-awesome.scss" />
+    <None Include="wwwroot\lib\font-awesome\scss\_bootstrap.scss" />
+    <None Include="wwwroot\lib\font-awesome\scss\_core.scss" />
+    <None Include="wwwroot\lib\font-awesome\scss\_extras.scss" />
+    <None Include="wwwroot\lib\font-awesome\scss\_icons.scss" />
+    <None Include="wwwroot\lib\font-awesome\scss\_mixins.scss" />
+    <None Include="wwwroot\lib\font-awesome\scss\_path.scss" />
+    <None Include="wwwroot\lib\font-awesome\scss\_variables.scss" />
+    <None Include="wwwroot\lib\font-awesome\sprites\brands.svg" />
+    <None Include="wwwroot\lib\font-awesome\sprites\regular.svg" />
+    <None Include="wwwroot\lib\font-awesome\sprites\solid.svg" />
+    <None Include="wwwroot\lib\font-awesome\webfonts\fa-brands-400.svg" />
+    <None Include="wwwroot\lib\font-awesome\webfonts\fa-brands-400.woff2" />
+    <None Include="wwwroot\lib\font-awesome\webfonts\fa-regular-400.svg" />
+    <None Include="wwwroot\lib\font-awesome\webfonts\fa-regular-400.woff2" />
+    <None Include="wwwroot\lib\font-awesome\webfonts\fa-solid-900.svg" />
+    <None Include="wwwroot\lib\font-awesome\webfonts\fa-solid-900.woff2" />
+    <None Include="wwwroot\lib\IziModal\dist\js\iziToast.js" />
+    <None Include="wwwroot\lib\jquery-ui-1.12.1.zip" />
+    <None Include="wwwroot\lib\jquery-ui-themes-1.12.1.zip" />
+    <None Include="wwwroot\lib\Jquery-ui\Jquery.ui.min-1.12.1.js" />
+    <None Include="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js" />
+    <None Include="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\additional-methods.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\additional-methods.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\jquery.validate.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\jquery.validate.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_ar.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_ar.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_az.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_az.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_bg.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_bg.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_bn_BD.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_bn_BD.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_ca.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_ca.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_cs.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_cs.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_da.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_da.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_de.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_de.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_el.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_el.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_es.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_es.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_es_AR.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_es_AR.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_es_PE.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_es_PE.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_et.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_et.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_eu.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_eu.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_fa.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_fa.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_fi.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_fi.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_fr.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_fr.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_ge.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_ge.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_gl.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_gl.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_he.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_he.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_hr.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_hr.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_hu.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_hu.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_hy_AM.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_hy_AM.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_id.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_id.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_is.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_is.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_it.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_it.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_ja.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_ja.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_ka.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_ka.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_kk.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_kk.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_ko.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_ko.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_lt.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_lt.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_lv.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_lv.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_mk.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_mk.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_my.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_my.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_nl.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_nl.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_no.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_no.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_pl.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_pl.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_pt_BR.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_pt_BR.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_pt_PT.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_pt_PT.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_ro.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_ro.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_ru.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_ru.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_sd.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_sd.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_si.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_si.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_sk.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_sk.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_sl.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_sl.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_sr.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_sr.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_sr_lat.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_sr_lat.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_sv.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_sv.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_th.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_th.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_tj.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_tj.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_tr.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_tr.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_uk.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_uk.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_ur.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_ur.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_vi.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_vi.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_zh.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_zh.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_zh_TW.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\messages_zh_TW.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\methods_de.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\methods_de.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\methods_es_CL.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\methods_es_CL.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\methods_fi.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\methods_fi.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\methods_it.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\methods_it.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\methods_nl.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\methods_nl.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\methods_pt.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\localization\methods_pt.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\LICENSE.md" />
+    <None Include="wwwroot\lib\jquery\core.js" />
+    <None Include="wwwroot\lib\jquery\dist\jquery-3.3.1.min.js" />
+    <None Include="wwwroot\lib\jquery\dist\jquery.unobtrusive-ajax.js" />
+    <None Include="wwwroot\lib\jquery\inputmask.bundle.min.js" />
+    <None Include="wwwroot\lib\jquery\jquery.js" />
+    <None Include="wwwroot\lib\jquery\jquery.min.js" />
+    <None Include="wwwroot\lib\jquery\jquery.min.map" />
+    <None Include="wwwroot\lib\jquery\jquery.slim.js" />
+    <None Include="wwwroot\lib\jquery\jquery.slim.min.js" />
+    <None Include="wwwroot\lib\jquery\jquery.slim.min.map" />
+    <None Include="wwwroot\lib\moment.min.js" />
+    <None Include="wwwroot\Templates\BuyTransferInTemplate.xlsx" />
+    <None Include="wwwroot\Templates\SentToClientServicesTemplate.xlsx" />
+    <None Include="wwwroot\Templates\SoldMaturedTemplate.xlsx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Lga.Id.Core\Lga.Id.Core.csproj" />
+    <ProjectReference Include="..\Lga.Id.Infrastructure\Lga.Id.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

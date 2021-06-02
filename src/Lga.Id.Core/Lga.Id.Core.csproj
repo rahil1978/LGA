@@ -1,0 +1,19 @@
+﻿
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <!--<TargetFramework>netstandard2.0</TargetFramework>-->
+    <AssemblyName>Lga.Id.Core</AssemblyName>
+    <PackageId>Lga.Id.Core</PackageId>
+    <RootNamespace>Lga.Id.Core</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Interfaces\Repositories\IRepository.cs" />
+  </ItemGroup>  
+
+  <ItemGroup>
+    <PackageReference Update="NETStandard.Library" Version="2.0.3" />
+  </ItemGroup>
+</Project>
