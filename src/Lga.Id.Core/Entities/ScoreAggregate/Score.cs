@@ -15,7 +15,7 @@ namespace Lga.Id.Core.Entities.ScoreAggregate
         public List<ScoreDetail> ScoreDetails { get; set; }
        
         // public DateTime CreatedOn { get; set; }
-        // public string CreatedBy { get; set; }
+        // public string CreatedBy { get; set; } 
 
         public Score()
         {
